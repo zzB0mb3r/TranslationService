@@ -23,8 +23,9 @@ namespace TranslationService.Api.Controllers
                 var response = await _translationService.TranslateAsync(model);
                 return Ok(response);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 return StatusCode(500, "Ooops! Something went wrong");
             }
         }
