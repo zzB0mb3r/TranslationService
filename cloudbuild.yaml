@@ -11,3 +11,5 @@ steps:
     - '--image=gcr.io/$PROJECT_ID/$REPO_FULL_NAME:$COMMIT_SHA'
     - '--platform=managed'
     - '--allow-unauthenticated'
+options:
+  logging: NONE
