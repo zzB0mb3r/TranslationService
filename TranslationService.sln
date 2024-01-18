@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslationService.Api", "TranslationService.Api\TranslationService.Api.csproj", "{ABE28A3C-B1C0-496E-B10E-5F7627C01C8E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C3CEE3E-2D53-43BE-8D2C-9E83091E48F1}"
+	ProjectSection(SolutionItems) = preProject
+		cloudbuild.yaml = cloudbuild.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
