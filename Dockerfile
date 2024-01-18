@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["TranslationService.Api/TranslationService.Api.csproj", "TranslationService.Api/"]
-COPY ["TranslationService.Core/TranslationService.Domain.csproj", "TranslationService.Core/"]
+COPY ["TranslationService.Domain/TranslationService.Domain.csproj", "TranslationService.Domain/"]
 RUN dotnet restore "./TranslationService.Api/./TranslationService.Api.csproj"
 COPY . .
 WORKDIR "/src/TranslationService.Api"
